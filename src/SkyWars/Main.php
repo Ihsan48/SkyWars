@@ -8,7 +8,7 @@ use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\item\Item;
 use pocketmine\level\Position;
 use pocketmine\math\Vector3;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\tile\Sign;
 use pocketmine\utils\TextFormat;
@@ -39,8 +39,7 @@ class Main extends PluginBase {
     /** @var string[] */
     private $player_arenas = [];
 
-    public function onEnable() : void
-    {
+    public function onEnable() : void {
         @mkdir($this->getDataFolder());
         $this->saveResource("lang.yml");
         foreach ($this->getResources() as $resource) {
