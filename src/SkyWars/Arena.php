@@ -4,9 +4,9 @@ namespace SkyWars;
 
 use pocketmine\block\Block;
 use pocketmine\item\Item;
-use pocketmine\level\Position;
-use pocketmine\level\sound\{PopSound, ClickSound, EndermanTeleportSound, Sound, BlazeShootSound};
-use pocketmine\Player;
+use pocketmine\world\Position;
+use pocketmine\world\sound\{PopSound, ClickSound, EndermanTeleportSound, Sound, BlazeShootSound};
+use pocketmine\player\Player;
 use pocketmine\tile\Chest;
 use pocketmine\utils\{Config, TextFormat};
 use pocketmine\network\mcpe\protocol\LevelSoundEventPacket;
