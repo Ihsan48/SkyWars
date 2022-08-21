@@ -68,10 +68,6 @@ class Main extends PluginBase {
 
     }
 
-    private function updatePlugin(string $old_version) : void
-    {
-    }
-
     public function onDisable() : void
     {
         yaml_emit_file($this->getDataFolder() . "signs.yml", $this->signs);
