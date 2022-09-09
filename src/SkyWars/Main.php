@@ -17,7 +17,7 @@ use onebone\economyapi\EconomyAPI;
 class Main extends PluginBase {
 
     /** Plugin Version */
-    const SW_VERSION = "0.7dev";
+    const SW_VERSION = "1.0.0";
 
     /** @var Commands */
     private $commands;
